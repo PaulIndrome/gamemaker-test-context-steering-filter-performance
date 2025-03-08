@@ -2,10 +2,12 @@
 
 event_inherited();
 
-context_funcs = [];
+instance_funcs = [];
 var _f = 0;
 repeat(array_length(global.context_funcs)){
-	context_funcs[_f] = method(id, global.context_funcs[_f++]);
+	instance_funcs[_f] = method(id, global.context_funcs[_f]);
+	
+	_f++;
 }
 
 list_targets = ds_list_create();
