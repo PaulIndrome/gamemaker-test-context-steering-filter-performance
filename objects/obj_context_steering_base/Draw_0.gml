@@ -16,7 +16,7 @@ switch(global.filter_func){
 		break;
 }
 
-show_debug_message($"{id}: {string(list_targets)}: {ds_list_size(list_targets)}");
+//show_debug_message($"{id}: {string(list_targets)}: {ds_list_size(list_targets)}");
 
 var _c = 0;
 repeat(array_length(contexts)){
